@@ -1,0 +1,8 @@
+.alert-box {
+    background-color: #f44336;
+    color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    width: 90vw;
+    height: 10vh;
+}

@@ -1,0 +1,10 @@
+<p>assigments</p>
+<div *ngFor="let assignment of assignments">
+    <p *ngIf="assignment.submitted; else nonsmoumis" [ngStyle]="{'color':assignment.submitted ? 'green' : 'red'}">
+        Devoir intitulé {{assignment.name}}, rendu le   
+                          {{assignment.dueDate}}.
+    </p>
+    <ng-template #nonsmoumis>
+        Le devoir {{assignment.name}} <b>n'a pas été rendu.</b>
+    </ng-template> 
+</div>
